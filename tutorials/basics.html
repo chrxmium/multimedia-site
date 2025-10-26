@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Basics Tutorial - SkidLearn</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="circle red"></span>
+      <span class="circle yellow"></span>
+      <span class="circle green"></span>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Tutorials</a>
+      <a href="../media.html">Media</a>
+    </nav>
+    <p class="breadcrumbs">tutorials / basics</p>
+    <h1>Terminal Basics</h1>
+    <p class="content-block">Master the fundamentals of the command line. This tutorial covers essential commands and concepts for beginners. Note; these terminals are used for UNIX and attached systems, not Windows based.</p>
+
+    <div class="card">
+      <h2>Lesson 1: Understanding the Terminal</h2>
+      <p>The terminal (or command line) is a text-based interface to your computer. Instead of clicking icons, you type commands.</p>
+      
+      <h3 class="small">Why use the terminal?</h3>
+      <ul>
+        <li class="small">More powerful and flexible than GUI tools</li>
+        <li class="small">Required for many privacy and security tools</li>
+        <li class="small">Faster once you learn the basics</li>
+        <li class="small">Enables automation through scripting</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Lesson 2: Essential Commands</h2>
+      
+      <h3 class="small">Navigation</h3>
+      <div class="ascii-art">
+$ pwd           # Print working directory
+$ ls            # List files
+$ cd Documents  # Change directory
+$ cd ..         # Go up one level
+$ cd ~          # Go to home directory
+      </div>
+      
+      <h3 class="small">File Operations</h3>
+      <div class="ascii-art">
+$ touch file.txt      # Create empty file
+$ mkdir new_folder    # Create directory
+$ cp file.txt backup.txt  # Copy file
+$ mv file.txt newname.txt # Move/rename
+$ rm file.txt         # Remove file
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lesson 3: Viewing and Editing</h2>
+      <div class="ascii-art">
+$ cat file.txt     # Display file contents
+$ less file.txt    # View file (paginated)
+$ head file.txt    # Show first 10 lines
+$ tail file.txt    # Show last 10 lines
+$ nano file.txt    # Edit with nano editor
+      </div>
+      <p class="small">Tip: Use <strong>Tab</strong> for auto-completion and <strong>↑/↓</strong> arrows for command history!</p>
+    </div>
+
+    <div class="card">
+      <h2>Practice Exercise</h2>
+      <p class="small">Try these commands in your terminal:</p>
+      <ol>
+        <li class="small">Create a directory called "practice"</li>
+        <li class="small">Navigate into it</li>
+        <li class="small">Create a file called "test.txt"</li>
+        <li class="small">List the contents to confirm</li>
+      </ol>
+      <p class="meta">Ready for more? Check out the <a href="advanced/">Advanced Tutorials</a></p>
+    </div>
+
+  </div>
+  <footer>&copy; SkidLearn - basics tutorial</footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="80" rx="8" fill="#181818" stroke="#00ff66" stroke-width="2"/>
+  <text x="100" y="35" text-anchor="middle" fill="#00ff66" font-family="monospace" font-size="20" font-weight="bold">NoSkid</text>
+  <text x="100" y="55" text-anchor="middle" fill="#b6ffcc" font-family="monospace" font-size="12">Today_</text>
+  <circle cx="15" cy="15" r="4" fill="#ff5f56"/>
+  <circle cx="30" cy="15" r="4" fill="#ffbd2e"/>
+  <circle cx="45" cy="15" r="4" fill="#27c93f"/>
+</svg>

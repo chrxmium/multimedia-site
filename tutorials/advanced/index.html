@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advanced Tutorials - SkidLearn</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="circle red"></span>
+      <span class="circle yellow"></span>
+      <span class="circle green"></span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Tutorials</a>
+      <a href="../../media.html">Media</a>
+    </nav>
+    <p class="breadcrumbs">tutorials / advanced</p>
+    <h1>Advanced Techniques</h1>
+    <p class="content-block">Level up your skills with advanced terminal usage, scripting, and privacy tools. Prerequisites: Complete the basics tutorial first. Note; these terminals are used for UNIX and attached systems, not Windows based.</p>
+
+    <div class="card">
+      <h2>Advanced Topic 1: Shell Scripting</h2>
+      <p>Automate repetitive tasks by writing shell scripts.</p>
+      
+      <h3 class="small">Your First Script</h3>
+      <div class="ascii-art">
+#!/bin/bash
+# backup.sh - Simple backup script
+
+echo "Starting backup..."
+tar -czf backup-$(date +%Y%m%d).tar.gz ~/Documents
+echo "Backup complete!"
+      </div>
+      <p class="small">Make it executable: <code>chmod +x backup.sh</code></p>
+      <p class="small">Run it: <code>./backup.sh</code></p>
+    </div>
+
+    <div class="card">
+      <h2>Advanced Topic 2: Network Tools</h2>
+      <p>Monitor and secure your network connections.</p>
+      
+      <h3 class="small">Useful Commands</h3>
+      <div class="ascii-art">
+$ ping google.com       # Test connectivity
+$ netstat -tuln         # View open ports
+$ ssh user@host         # Secure remote login
+$ scp file.txt user@host:~  # Secure copy
+      </div>
+      <p class="meta">Always use these tools ethically and legally. Never scan networks you don't own or have permission to test.</p>
+    </div>
+
+    <div class="card">
+      <h2>Advanced Topic 3: Privacy Tools</h2>
+      
+      <h3 class="small">Tor Browser (Command Line)</h3>
+      <div class="ascii-art">
+# Install Tor
+$ sudo apt install tor
+
+# Start Tor service
+$ sudo systemctl start tor
+
+# Configure proxy: SOCKS5 localhost:9050
+      </div>
+      
+      <h3 class="small">GPG Encryption</h3>
+      <div class="ascii-art">
+$ gpg --gen-key              # Generate key pair
+$ gpg --encrypt file.txt     # Encrypt a file
+$ gpg --decrypt file.txt.gpg # Decrypt a file
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Advanced Topic 4: System Monitoring</h2>
+      <div class="ascii-art">
+$ top           # Real-time process monitor
+$ htop          # Enhanced process viewer
+$ df -h         # Disk space usage
+$ du -sh *      # Directory sizes
+$ ps aux        # List all processes
+      </div>
+      <p class="small">Use <code>q</code> to quit top/htop viewers.</p>
+    </div>
+
+    <div class="card">
+      <h2>Next Steps</h2>
+      <ul>
+        <li class="small">Practice these commands in a safe environment</li>
+        <li class="small">Watch our <a href="../../media/video.html">video tutorials</a> for visual guides</li>
+        <li class="small">Join the community on IRC for questions</li>
+        <li class="small">Always verify commands before running them</li>
+      </ul>
+      <div class="ascii-art">
+ ___ ___ _   _  ___ ___ 
+| __|_ _| \ | ||_ _/ __|
+| _| | ||  \| | | |\__ \
+|_| |___|_|\_||___|___/
+      </div>
+    </div>
+
+  </div>
+  <footer>&copy; SkidLearn - advanced tutorials</footer>
+</body>
+</html>
